@@ -1,0 +1,9 @@
+<form class="form-inline" (submit)="addTodo($event)">
+  <div class="form-group mb-0">
+    <label class="sr-only">Todo</label>
+    <input (input)="handleInput($event.target.value)" class="form-control" name="todo"
+      placement="bottom">
+  </div>
+  <button type="submit" class="btn btn-primary">+</button>
+  {{todo}}
+</form>

@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "module": "es2015", // modules exportés en ES6
+    "moduleResolution": "node", // rend accessible node_modules si module es2015
+    "target": "es5", // code exporté en ES5
+    "sourceMap": false, // génère les fichiers map pour le debug ou non
+    "declaration": true, // génère les fichiers .d.ts pour la complétion
+    "experimentalDecorators": true, // support des décorateurs @Component ...
+    "outDir": "dist", // dossier de destination
+    "rootDir": "src", // dossier à builder
+    "lib": [
+      "dom", // reconnait les types du DOM : Console, Node, Document...
+      "es2015" // reconnait les types ES6 : Map...
+    ]
+  }
+}

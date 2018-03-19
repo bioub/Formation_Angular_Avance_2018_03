@@ -1,0 +1,20 @@
+{
+  "name": "@formationtech/ui-copyright",
+  "version": "0.0.1",
+  "dependencies": {},
+  "devDependencies": {
+    "@angular/common": "^5.2.9",
+    "@angular/compiler": "^5.2.9",
+    "@angular/compiler-cli": "^5.2.9",
+    "@angular/core": "^5.2.9",
+    "copyfiles": "^2.0.0",
+    "rxjs": "^5.5.7",
+    "typescript": "^2.6.2"
+  },
+  "scripts": {
+    "build": "ngc"
+  },
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "typings": "dist/index.d.ts"
+}
