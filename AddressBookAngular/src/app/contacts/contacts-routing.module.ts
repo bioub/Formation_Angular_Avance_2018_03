@@ -6,7 +6,7 @@ import { ContactsListComponent } from './contacts-list/contacts-list.component';
 import { ContactsShowComponent } from './contacts-show/contacts-show.component';
 
 const routes: Routes = [{
-  path: 'contacts',
+  path: '',
   component: ContactsListComponent,
   data: {
     title: 'Contacts',

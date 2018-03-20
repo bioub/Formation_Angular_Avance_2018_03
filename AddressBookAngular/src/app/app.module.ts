@@ -4,7 +4,7 @@ import { UiCopyrightModule } from '@formationtech/ui-copyright';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ContactsModule } from './contacts/contacts.module';
+// import { ContactsModule } from './contacts/contacts.module';
 import { CoreModule } from './core/core.module';
 
 @NgModule({
@@ -14,7 +14,7 @@ import { CoreModule } from './core/core.module';
   imports: [
     BrowserModule,
     CoreModule,
-    ContactsModule,
+    // ContactsModule,
     UiCopyrightModule,
     AppRoutingModule, // toujours en dernier
   ],

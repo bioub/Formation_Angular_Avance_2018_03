@@ -2,6 +2,8 @@ import {ChangeDetectionStrategy, ChangeDetectorRef, Component, OnInit} from "@an
 import { ActivatedRoute } from '@angular/router';
 import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/switchMap';
+import 'rxjs/add/operator/toPromise';
+import 'rxjs/add/operator/mergeMap';
 import { ContactService } from './../../core/services/contact/contact.service';
 import { Contact } from './../../shared/models/contact';
 import {Observable} from "rxjs/Observable";
@@ -13,6 +15,7 @@ import {Observable} from "rxjs/Observable";
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class ContactsShowComponent implements OnInit {
+  public contact: Contact;
   public contact$: Observable<any>;
 
   constructor(
@@ -22,9 +25,12 @@ export class ContactsShowComponent implements OnInit {
   ) {}
 
   ngOnInit() {
-    this.contact$ = this.route.params
-      .map(params => Number(params.id))
-      .switchMap((id: number) => this.contactService.getById$(id));
+    this.route.params
+      .switchMap((params) => this.contactService.getById$(Number(params.id)))
+      .subscribe((contact) => {
+        this.contact = contact;
+        this.cd.markForCheck();
+      });
   }
 
 }

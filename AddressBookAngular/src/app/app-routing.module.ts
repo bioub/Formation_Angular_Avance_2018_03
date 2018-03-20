@@ -7,6 +7,10 @@ const routes: Routes = [{
   path: '',
   component: HomeComponent,
 }, {
+  path: 'contacts',
+  loadChildren: './contacts/contacts.module#ContactsModule'
+},
+  {
   path: '**',
   component: NotFoundComponent
 }];
