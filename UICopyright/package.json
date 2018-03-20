@@ -2,14 +2,19 @@
   "name": "@formationtech/ui-copyright",
   "version": "0.0.1",
   "dependencies": {},
+  "peerDependencies": {
+    "@angular/common": "^4.0.1 || ^5.0.0",
+    "@angular/core": "^4.0.1 || ^5.0.0",
+    "rxjs": "^5.5.7"
+  },
   "devDependencies": {
-    "@angular/common": "^5.2.9",
-    "@angular/compiler": "^5.2.9",
-    "@angular/compiler-cli": "^5.2.9",
-    "@angular/core": "^5.2.9",
+    "@angular/common": "^4.4.6",
+    "@angular/compiler": "^4.4.6",
+    "@angular/compiler-cli": "^4.4.6",
+    "@angular/core": "^4.4.6",
     "copyfiles": "^2.0.0",
     "rxjs": "^5.5.7",
-    "typescript": "^2.6.2"
+    "typescript": "^2.4.2"
   },
   "scripts": {
     "build": "ngc"

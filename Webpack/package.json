@@ -1,0 +1,17 @@
+{
+  "dependencies": {
+    "date-fns": "^1.29.0"
+  },
+  "devDependencies": {
+    "html-webpack-plugin": "^3.0.7",
+    "rimraf": "^2.6.2",
+    "webpack": "^4.1.1",
+    "webpack-cli": "^2.0.12",
+    "webpack-dev-server": "^3.1.1"
+  },
+  "scripts": {
+    "serve:dev": "webpack-dev-server --mode development",
+    "build:dev": "rimraf dist && webpack --mode development",
+    "build:prod": "rimraf dist && webpack --mode production"
+  }
+}
